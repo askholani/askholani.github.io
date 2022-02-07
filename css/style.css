@@ -179,6 +179,7 @@
      opacity: 0;
      transition: 1s;
      text-align: center;
+
 }
 
 .main-2 p {
@@ -331,6 +332,7 @@
      width: 200px;
      text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.2);
      border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+     padding-bottom: 10px;
 }
 
 .portofolio .img {
@@ -343,15 +345,28 @@
 }
 
 .img .isi {
-     background-color: antiquewhite;
+     background-color: rgba(0, 0, 0, 0.2);
      height: 200px;
      width: inherit;
      list-style: none;
-     border: 1px solid black;
+     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
      opacity: 0;
      transform: translate(0px ,-50px);
      transition: 0.8s;
 }
+
+.img a {
+     text-decoration: none;
+}
+
+.img .isi.satu {
+     color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 2em;
+}
+
 
 .img .isi.active {
      opacity: 1;
@@ -471,10 +486,12 @@
           position: fixed;
           width: 100%;
           transform: translateX(-100%);
+          top: 50px;
      }
 
      .main {
           min-height: 80vh;
+          top: 50px;
      }
 
      .main.responsive .main-1{
@@ -484,4 +501,20 @@
      .main.responsive .main-2 {
           top: -20px;
      }
+
+     .main-2 .skew {
+          width: 350px;
+          min-height: 180px;
+     }
+
+     .main-2 .about-me {
+          width: 320px;
+     }
+
+     .header {
+          min-height: 50px;
+          padding: 0;
+      }
+
+
 }
