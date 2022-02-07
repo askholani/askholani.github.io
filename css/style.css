@@ -416,7 +416,8 @@
 
 .contact ul {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(100px ,1fr));
+     grid-template-columns: repeat(auto-fit, minmax(200px ,1fr));
+     row-gap: 15px;
      justify-items: center;
      margin: 0 auto;
 }
@@ -516,5 +517,12 @@
           padding: 0;
       }
 
+      .contact ul {
+           justify-items: start;
+      }
+      
+
+
 
 }
+
